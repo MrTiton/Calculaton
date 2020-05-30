@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculaton</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="cabecalho">
+                <p>Calculaton</p>
+            </div>
+        </header>
+        <div id="principal">
+            <br><br>
+            <p>Informe o primeiro valor</p>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="openDropdown()">Operação</button>
+                <div id="dropdown-content">
+                    <a href="#">Soma(+)</a>
+                    <a href="#">Subtração(-)</a>
+                    <a href="#">Multiplicação(*)</a>
+                    <a href="#">Divisão(/)</a>
+                </div>
+            </div>
+            <br>
+            <input type="number" id="firstValue" placeholder="Insira o primeiro valor" pattern="[0-8]{3}">
+            <br>
+            <br>
+            <p>Informe o segundo valor</p>
+            <br>
+            <input type="number" id="secondValue" placeholder="Insira o segundo valor">
+            <br>
+            <br>
+            
+            <br>
+            <button onClick="resultador()">=</button>
+            <br>
+            <br>
+            <p>O resultado é <a id="result"></a></p>                             
+        </div>
+        <!-- https://www.w3schools.com/howto/howto_css_button_split.asp -->
+
+
+        <script src="./js/funciones.js">
+        </script>
+    </body>
+    <footer>
+        <div id="rodape">
+            <p>
+                Made with <i class="em em-fire" aria-role="presentation" aria-label="FIRE"></i>
+            </p>
+        </div>
+    </footer>
+</html>
