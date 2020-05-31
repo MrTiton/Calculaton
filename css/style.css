@@ -14,7 +14,7 @@ div#cabecalho {
     font-family: 'Lacquer', cursive;
     color: white;
     font-size: 60px;
-    margin-top: -45px;
+    margin-top: -10px;
     text-shadow: 10px 10px 30px rgb(122, 121, 121);
 }
 
@@ -81,14 +81,15 @@ button.dropbtn {
     cursor:pointer
 }
 
-button.dropbtn:active {
+button.dropbtn:hover  {
     background-color: rgb(46, 43, 43);
     color: rgb(248, 248, 248);        
     border: 0.25rem outset rgb(199, 199, 199);    
-    transform: translateY(-4px);
+    transform: translateY(2px);
 }
 
 div.dropdown {
+    /* position: absolute; */
     position: absolute;
     display: inline-block;
     margin-left: 100px;
@@ -96,34 +97,34 @@ div.dropdown {
     /* float: right; */    
 }
 
-div#dropdown-content {
+div.dropdown-content {
     display: none;
     position: absolute;
     background-color: rgb(165, 165, 165); /*#f1f1f1;*/
     /* min-width: 160px; */
     width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1; /* I don't undestand what this is doing here, resolve that */
     border-radius: 12px;
+    z-index: 1;
 }
 
-div#dropdown-content a {
+div.dropdown-content a {
     color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-div#dropdown-content a:active {
-    background-color: rgb(185, 90, 90);
+div.dropdown-content a:active {
+    background-color: rgb(46, 43, 43);
     border-radius: 12px;
 }
 
-div.dropdown:active div#dropdown-content {
+div.dropdown:hover div.dropdown-content {
     display: block;
 }
 
-div.dropdown:active div.dropbtn {
+div.dropdown:hover div.dropbtn {
     background-color: #3e8e41;
 }
 
