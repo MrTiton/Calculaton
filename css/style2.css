@@ -1,0 +1,45 @@
+body {
+    background-color: green;
+}
+
+.a_demo_two {
+    background-color: rgb(56, 177, 222);
+    padding: 40px; 
+    position: relative;
+    top: 500px;    
+    font-family: 'Oswald', sans-serif; 
+    font-size: 12px ;          
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 6px 0px rgb(33, 139, 180) ;
+    border-radius: 5px;
+} 
+
+.a_demo_two:active {
+    top: 507px;
+    box-shadow: inset 0px -1px 0px rgb(33, 139, 180) ;   
+    color: #156785;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
+    background: rgb(44, 160, 202);
+}
+
+.a_demo_two::before {
+    background-color: #072239;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 4px;
+    left: -2px;
+    top: 5px;
+    z-index: -1;
+    border-radius: 6px;
+    /* box-shadow: 0px 1px 0px #fff;     */
+} 
+
+.a_demo_two:active::before {
+    top: -2px;
+}

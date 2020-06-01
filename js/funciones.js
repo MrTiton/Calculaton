@@ -42,22 +42,31 @@
     }
     
     function ResolveForMe() {
-        let a = parseFloat(document.getElementById("firstValue").value);
-        let b = parseFloat(document.getElementById("secondValue").value);
-        
-        if (GetClassName('.dropbtn').textContent === "Adiction(+)") {
-            document.getElementById("result").innerHTML = Addiction(a, b);  
-            GetClassName('.dropbtn').textContent = 'Operation';  
-        } else if (GetClassName('.dropbtn').textContent === "Subtraction(-)") {
-            document.getElementById("result").innerHTML = Subtraction(a, b);    
-            GetClassName('.dropbtn').textContent = 'Operation';
-        } else if (GetClassName('.dropbtn').textContent === "Multiplication(*)") {
-            document.getElementById("result").innerHTML = Multiplication(a, b);    
-            GetClassName('.dropbtn').textContent = 'Operation';
-        } else if (GetClassName('.dropbtn').textContent === "Division(/)") {
-            document.getElementById("result").innerHTML = Division(a, b);    
-            GetClassName('.dropbtn').textContent = 'Operation';
+
+        if (document.getElementById("firstValue").value == '' && document.getElementById("secondValue").value == '') {
+            window.alert("Please inform the values !");
+        } else if (document.getElementById("firstValue").value == '') { 
+            window.alert("Please inform the first value !");
+        } else if (document.getElementById("secondValue").value == '') {
+            window.alert("Please inform the second value !");
         } else {
-            window.alert("The operator selected is invalid !");
-        }
+            let a = parseFloat(document.getElementById("firstValue").value);
+            let b = parseFloat(document.getElementById("secondValue").value);
+            
+            if (GetClassName('.dropbtn').textContent === "Adiction(+)") {
+                document.getElementById("result").innerHTML = Addiction(a, b);  
+                // GetClassName('.dropbtn').textContent = 'Operation';  
+            } else if (GetClassName('.dropbtn').textContent === "Subtraction(-)") {
+                document.getElementById("result").innerHTML = Subtraction(a, b);    
+                // GetClassName('.dropbtn').textContent = 'Operation';
+            } else if (GetClassName('.dropbtn').textContent === "Multiplication(*)") {
+                document.getElementById("result").innerHTML = Multiplication(a, b);    
+                // GetClassName('.dropbtn').textContent = 'Operation';
+            } else if (GetClassName('.dropbtn').textContent === "Division(/)") {
+                document.getElementById("result").innerHTML = Division(a, b);    
+                // GetClassName('.dropbtn').textContent = 'Operation';
+            } else {
+                window.alert("The operator selected is invalid !");
+            }
+        }       
     }
