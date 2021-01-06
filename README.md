@@ -6,4 +6,4 @@ Take a look !
 https://mrtiton.github.io/calculaton/
 
 <br>
-In improvement process  🔨
+In improvement process  🔨 🧹 📝 🔎
